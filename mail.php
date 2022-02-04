@@ -21,23 +21,33 @@ echo '
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/bootstrap.css">
     <link rel="stylesheet" href="CSS/mainpage.css">
+    <link rel="stylesheet" href="CSS/background.css">
     <link rel="icon" href="IMG/favicon.png">
     <title>CPW</title>
   </head>
   <body>
+    <div class="container py-4">
       <div class="toplogo">
-        <img href="index.html" src="IMG/image001.png">
+          <a href="index.html"><img src="IMG/image001.png"></a>
       </div>
-            <header class="d-flex justify-content-center py-2">
-            <ul class="nav nav-pills">
-                <li class="nav-item"><a href="index.html" class="nav-link" aria-current="page">ÚVOD</a></li>
-                <li class="nav-item"><a href="rozsah_cinnosti.html" class="nav-link">ROZSAH ČINNOSTÍ</a></li>
-                <li class="nav-item"><a href="reference.html" class="nav-link">REFERENCE</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">ELEKTRO REVIZE</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">KARIÉRA</a></li>
-                <li class="nav-item"><a href="kontakt.html" class="nav-link">KONTAKT</a></li>
-            </ul>
-        </header>
+    <header class="d-flex justify-content-center py-2">
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="index.html" class="nav-link " aria-current="page">ÚVOD</a></li>
+            <li class="nav-item"><a href="rozsah_cinnosti.html" class="nav-link">ROZSAH ČINNOSTÍ</a></li>
+            <li class="nav-item"><a href="reference.html" class="nav-link">REFERENCE</a></li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">ELEKTRO REVIZE</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">ELEKTRO REVIZE</a>
+                <a class="dropdown-item" href="#">REFERENCE</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="kontakt.html">KONTAKT</a>
+              </div>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">KARIÉRA</a></li>
+            <li class="nav-item"><a href="kontakt.html" class="nav-link active">KONTAKT</a></li>
+        </ul>
+    </header>
             </div>
       </div>
       <div class="container py-4">
@@ -59,6 +69,8 @@ echo '
         </div>
         </footer>
       </div>
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
   </body>
 </html>
 ';
