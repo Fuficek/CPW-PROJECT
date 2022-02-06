@@ -20,19 +20,20 @@ body {
 
 div.parallax {
     width: 100vw;
-    height: 100vh;
+    height: 50vh;
     position: relative;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
 }
 
 div.parallax:after {
-    background-image: url("../IMG/yellow-factory.jpg");
+    background-image: url("../IMG/yellow-factory-darken.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: absolute;
-    top: 0px;
+    height: 50vh;
+    top: -250px;
     left: 0px;
     right: 0px;
     bottom: 0px;
@@ -58,17 +59,43 @@ div.content-outer {
     background-color: white;
     perspective: 2px;
     -webkit-perspective: 2px;
-}
+        width: 100%;
+        height: fit-content;
+        background-repeat: no-repeat;
+        background-size: 110%;
+        background-image: url("../IMG/BG/1920BG.png");
+        
+    }
+    @media (max-width: 1600px) {
+        div.content-outer {
+            background-image: url("../IMG/BG/BG1600.png");
+        }
+    }
+    @media (max-width: 1440px) {
+        div.content-outer {
+            background-image: url("../IMG/BG/BG1440.png");
+        }    
+    }
+    @media (max-width: 1280px) {
+        div.content-outer {
+            background-image: url("../IMG/BG/BG1280.png");
+        } 
+    }
+    @media (max-width: 767px) {
+        div.content-outer {
+            background-image: none;
+        } 
+    }
+
 
 div.content-inner {
-    width: 1200px;
-    font-family: "Arial";
     font-size: 13pt;
     color: #333;
     line-height: 1.40em;
     padding: 50px 20px;
     margin: 0px auto;
     display: block;
+    
 }
 
 @media (max-width: 768px) {
