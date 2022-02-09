@@ -98,3 +98,30 @@
   .banner-text {
     color: rgba(255, 255, 255, 0.780); 
   }
+  .collumn-1 {
+    float:left; 
+    width: 50%;
+    background-color: #E8F6F7;
+}
+
+.collumn-2 {
+    float:left; 
+    margin-left:30px;
+    background-color: #f2dede;
+}
+.fit {
+  width: fit-content;
+}
+.img-scale {
+  width: 80%;
+  height: auto;
+}
+.fit-roman {
+  color: white;
+  text-decoration: none;
+}
+@media (max-width: 767px) {
+  .fit-roman {
+      color: black;
+  } 
+}
