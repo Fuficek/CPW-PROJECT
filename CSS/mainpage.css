@@ -1,3 +1,11 @@
+:root{
+  --c-white: white;
+  
+}
+
+
+
+
 .rows {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -89,6 +97,31 @@
     width: 40%;
     height: auto;
   }
+  @media (max-width: 1600px) {
+    .mainlogo{
+      width: 50%;
+    }
+  }
+    @media (max-width: 1400px) {
+      .mainlogo{
+        width: 60%;
+      }
+    }
+      @media (max-width: 1100px) {
+        .mainlogo{
+          width: 70%;
+        }
+      }
+        @media (max-width: 750px) {
+          .mainlogo{
+            width: 80%;
+          }
+        }
+          @media (max-width: 500px) {
+            .mainlogo{
+              width: 100%;
+            }
+  }
   .blackbanner {
     margin-top: -200;
     height: 100%;
@@ -116,12 +149,46 @@
   width: 80%;
   height: auto;
 }
-.fit-roman {
-  color: white;
-  text-decoration: none;
+.carousel {
+  position: relative;
 }
-@media (max-width: 767px) {
-  .fit-roman {
-      color: black;
-  } 
+.carousel-item img {
+  object-fit: cover;
 }
+#carousel-thumbs {
+  background: rgba(255,255,255,.3);
+  bottom: 0;
+  left: 0;
+  padding: 0 50px;
+  right: 0;
+}
+#carousel-thumbs img {
+  border: 5px solid transparent;
+  cursor: pointer;
+}
+#carousel-thumbs img:hover {
+  border-color: rgba(255,255,255,.3);
+}
+#carousel-thumbs .selected img {
+  border-color: #fff;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+}
+@media all and (max-width: 767px) {
+  .carousel-container #carousel-thumbs img {
+    border-width: 3px;
+  }
+}
+@media all and (min-width: 576px) {
+  .carousel-container #carousel-thumbs {
+    position: absolute;
+  }
+}
+@media all and (max-width: 576px) {
+  .carousel-container #carousel-thumbs {
+    background: #ccccce;
+  }
+}
+#client-testimonial-carousel {min-height: 200px;}
